@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Ishan Kafle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/intro.html">MyIntro</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+
+          <div class="main">
+            <div class="contactform">
+                <h1 style="color: red;">Contact me for general Inqury</h1>  
+                <br><br>
+
+                <form onsubmit="sendEmail()">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name </label>
+                        <input type="name" class="form-control" id="name" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email and Phone number with anyone else.</div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="clintphone" class="form-label">Phone No. </label>
+                      <input type="phone" class="form-control" id="clintphone">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="clintphone" class="form-label">Enquiry </label>
+                      <input type="text" class="form-control" id="Enquiry">
+                    </div>
+
+                    <div class="mb-3" id="form-check">
+                      <input type="checkbox" class="form-check-input" id="isclient">
+                      <label class="form-check-label" for="isclient">I want you to check on project</label>
+                    </div>
+
+                    <div class="sub_btn_">
+                      <button type="submit" class="btn_btn-primary">Submit</button>
+                    </div>
+
+                </form>
+              </div>            
+            </div>
+          </div>
+
+
+    <div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        var from_mail=(document.getElementById("exampleInputEmail1").value);
+
+        if(from_mail ==""){
+          alert("Please fill the all fill")
+        }
+
+        document.write(ik)
+        sendEmail()
+        Email.send({
+          Host : "smtp.gmail.com",
+          Username : "www.2020ishankafle@gmail.com",
+          Password : "password",
+          To : 'www.2020ishankafle@gmail.com',
+          From : from_mail,
+          Subject : "This is the subject",
+          Body : "And this is the body"
+          
+        }).then(
+          message => alert("P;ease fill the valid email.."+message)
+          );
+      }
+        // document.write("Hello I am Ishan")
+        // document.write("Hello I am Ishan")
+        // document.write("Hello I am Ishan")
+
+        // document.write.getElementById("email").value
+    </script>
+    </div>
+
+</body>
+</html>

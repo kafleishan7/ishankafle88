@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+ body{
+    background:linear-gradient(rgb(127, 145, 233), rgb(117, 182, 243),rgb(11, 60, 152));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+ .navi nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul{
+    border-radius: 40px;
+    width: 100vh;
+    height: 50px;
+    margin: 40px;
+    /* padding: 20px; */
+    list-style:  none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(6, 7, 22);
+
+}
+
+nav ul li{
+    /* padding: 20px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    /* display: flex; */
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(178, 199, 223);  
+}
+
+nav ul li:hover{
+    display: flex;
+    cursor: pointer;
+    /* padding-bottom: 5px; */
+    background-color: red;
+}

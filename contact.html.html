@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animated Login Form</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="contactcss.css.css">
+
+	
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<nav>
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/intro.html">MyIntro</a></li>						<li><a href="/services.html">Services</a></li>
+					<li><a href="/contact.html">Contact Me</a></li>
+					<li><a href="/blog.html">Blog</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main">
+		<div class="box">
+			<form autocomplete="off" onclick=emailsend()>
+				<h2>Contact me for general Inquiry</h2>
+
+				<div class="inputBox">
+					<input type="name" required="required">
+					<span>Name</span>
+					<i></i>
+				</div>
+				<div class="inputBox">					
+					<input type="gmail" required="required">
+					<span>Gmail</span>
+					<i></i>					
+				</div>
+				<div class="inputBox">
+					<input type="address" required="required">
+					<span>Address</span>
+					<i></i>
+				</div>
+				<div class="inputBox" id="inquery">
+					<input type="" required="required">
+					<span>Inquery</span>
+					<i></i>
+				</div>
+
+
+				<!-- <div class="links">
+					<a href="#">Signup</a>
+				</div> -->
+				<input type="submit" value="Send">
+			</form>
+		</div>
+		</div>
+	</div>
+
+	<script>
+		emailsend();{
+			
+			document.write("Hi I am ishan");
+		}
+	</script>
+</body>
+</html>
